@@ -21,8 +21,53 @@
    </style>
 </head>
 
-<body>
+<body class=" bg-[#f8fafc] w-11/12">
+   <main class="bg-[#ffff] w-[510px] shadow-2xl h-[780px] rounded-xl mx-auto my-3">
+      <header class="flex justify-center space-y-4 ">
+         <div class=" ">
+            <div class=" p-3 flex items-center justify-center">
+               <img src="./assets/github-logo.png" class="" alt="">
+            </div>
+            <h2 class="text-center font-bold text-[27px] ">GitHub Issues Tracker</h2>
+            <p class="text-center text-[#65758b] text-[16px]">Sign in to manage your issues</p>
+         </div>
+      </header>
+      <!-- login from section -->
+      <div class="flex items-center justify-center mt-5 ">
+         <div class="card bg-base-100 w-full max-w-sm ">
+            <div class="card-body ">
+               <fieldset class="fieldset space-y-3">
+                  <label class="label font-medium text-[16px] text-neutral-950 ">Username</label>
+                  <input id="user-inp" type="text" class="input " placeholder="Enter Username" />
+                  <p class="font-light text-[14px] text-[#4a00ff]">Default: admin</p>
+                  <label class="label font-medium text-[16px] text-neutral-950">Password</label>
+                  <input id="password-inp" type="password" class="input" placeholder="Enter Password" />
+                  <p class="font-light text-[14px] text-[#4a00ff]">Default: admin123</p>
 
+                  <button id="signIn-btn" class="btn btn-outline btn-primary w-[325px]">Sign In</button>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+      <!-- divider -->
+      <div class="px-20">
+         <div class="divider">OR</div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center ">
+         <p class="text-[#65758b] my-6 text-[16px]">
+            Demo Credentials:
+         </p>
+         <p class="text-[16px]">
+            <span class="font-medium text-[16px]"> Username:</span> admin
+
+         </p>
+         <p class="text-[16px] pb-5">
+            <span class="font-medium text-[16px]">Password:</span> admin123
+         </p>
+      </div>
+   </main>
+   <script src="js/index.js"></script>
 </body>
 
 </html>
