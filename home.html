@@ -2,13 +2,108 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GitHub Issues Tracker</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GitHub Issues Tracker</title>
+   <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+
+   <!-- daisyui and tailwind link -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <!-- google font  -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+   <!-- font awesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <style>
+      * {
+         font-family: "Geist", sans-serif;
+      }
+   </style>
 </head>
 
 <body>
-        <h2>hello</h2>
+   <!-- nav bar section -->
+   <header>
+      <div class="navbar bg-[#ffffff] shadow-sm mb-12">
+         <div class="flex-1">
+            <div class="flex  items-center gap-[0] mx-6">
+               <img src="./assets/github-logo.png" class="w-9" alt="">
+               <a class="btn btn-ghost text-2xl  sm:font-light sm:text-xl md:font-semibold">GitHub Issues Tracker</a>
+            </div>
+         </div>
+         <div class="flex gap-2">
+            <!-- search bar start -->
+            <label class="input">
+               <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                     stroke="currentColor">
+                     <circle cx="11" cy="11" r="8"></circle>
+                     <path d="m21 21-4.3-4.3"></path>
+                  </g>
+               </svg>
+               <input type="search" class="grow w-24 md:w-auto text-[#e4e4e7]" placeholder="Search issues..." />
+
+            </label>
+            <!-- search bar end -->
+            <div class="flex mr-9">
+               <button class="btn btn-outline btn-primary">
+                  <i class="fa-solid fa-plus"></i> New Issue</button>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- main section -->
+   <main class="w-11/12 mx-auto">
+      <!-- button section -->
+      <section class="">
+         <div class="bg-[#ffffff] shadow-sm p-3 ">
+            <button id="all-btn" class="btn btn-outline btn-primary w-18">All</button>
+            <button id="open-btn" class="btn btn-outline btn-primary">Open</button>
+            <button id="close-btn" class="btn btn-outline btn-primary">close</button>
+         </div>
+      </section>
+      <!-- issues number section -->
+      <section class="my-6 bg-[#ffffff] shadow-lg  rounded-lg">
+         <div class="p-5 flex justify-between items-center">
+            <div class=" flex items-center gap-3">
+               <div class="p-0 m-0 bg-[#ece4ff] w-16 rounded-full  ">
+                  <img src="./assets/Aperture.png" class="border-[5px] rounded-full p-0 m-0 border-[#ece4ff] w-16 ">
+               </div>
+               <!-- text and counting part -->
+               <div class="">
+                  <h2 class="font-semibold text-[20px]">50 Issues</h2>
+                  <p class="font-medium text-[18px] text-[#65758b]">Track and manage your project issues</p>
+               </div>
+            </div>
+            <div class="flex gap-4">
+               <h2 class="flex items-center gap-1 font-medium text-[16px]">
+                  <div class="bg-[#2ba96e] w-2 h-2 rounded-full"></div>Open
+               </h2>
+               <h2 class="flex items-center gap-1 font-medium text-[16px]">
+                  <div class="bg-[#a855f7] w-2 h-2 rounded-full"></div>Close
+               </h2>
+
+
+
+            </div>
+         </div>
+         <div class="divider "></div>
+
+         <!-- card section -->
+
+         <div>
+
+         </div>
+      </section>
+   </main>
+   <script src="js/home.js"></script>
 </body>
 
 </html>
